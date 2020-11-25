@@ -33,7 +33,13 @@ namespace ConsoleUI
             vehicles.Add(goKart);
 
             // Using a foreach loop iterate over each of the properties
-
+            foreach (var item in vehicles)
+            {
+                Console.WriteLine($"{item.Year} {item.Make} {item.Model}");
+                item.DriveAbstract();
+                item.DriveVirtual();
+                Console.WriteLine();
+            }
 
             // Call each of the drive methods for one car and one motorcycle
 
