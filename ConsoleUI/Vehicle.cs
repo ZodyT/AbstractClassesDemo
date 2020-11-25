@@ -11,17 +11,17 @@ namespace ConsoleUI
      * Vehicle shall have an abstract method called DriveAbstract with no implementation
      * Vehicle shall have a virtual method called DriveVirtual with a base implementation.
      */
-    abstract class Vehicle
+    public abstract class Vehicle
     {
-        public int Year { get; set; } = 0000
-        public string Make { get; set; } = "Generic Make"
-        public string Model { get; set; } = "Generic Model"
-    }
-    public abstract void DriveAbstract();
+        public int Year { get; set; } = 0000;
+        public string Make { get; set; } = "Generic Make";
+        public string Model { get; set; } = "Generic Model";
 
-    public virtual void DriveAbstract();
-    {
-    }
+        public abstract void DriveAbstract();
 
+        public virtual void DriveVirtual()
+        {
+        }
+    }
 
 }
