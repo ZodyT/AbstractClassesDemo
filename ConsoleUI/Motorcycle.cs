@@ -10,10 +10,15 @@ namespace ConsoleUI
             * Provide the implementations for the abstract methods
             * Only in the Motorcycle class will you override the virtual drive method
            */
-    class Motorcycle : Vehicle
+         
+    public class Motorcycle : Vehicle
     {
+        public Motorcyle()
+        {
+
+        }
         public bool HasSideCart { get; set; }
-    }
+    
 
     public abstract void DriveAbstract();
 

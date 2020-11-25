@@ -21,6 +21,7 @@ namespace ConsoleUI
 
         public virtual void DriveVirtual()
         {
+            Console.WriteLine($"This {GetType().Name} is virtually in drive");
         }
     }
 
