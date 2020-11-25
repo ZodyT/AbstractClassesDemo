@@ -24,10 +24,16 @@ namespace ConsoleUI
             Vehicle golfCart = new Car() { HasTrunk = true, Make = "Yamaha", Model = "Drive", Year = 2009 };
             Vehicle goKart = new Car() { HasTrunk = false, Make = "Kandy", Model = "150cc", Year = 2020 };
 
-            /*
-             * Add the 4 vehicles to the list
-             * Using a foreach loop iterate over each of the properties
-             */
+
+            //Add the 4 vehicles to the list
+
+            vehicles.Add(classic);
+            vehicles.Add(harley);
+            vehicles.Add(golfCart);
+            vehicles.Add(goKart);
+
+            // Using a foreach loop iterate over each of the properties
+
 
             // Call each of the drive methods for one car and one motorcycle
 
